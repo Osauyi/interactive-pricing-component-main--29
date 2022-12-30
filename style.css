@@ -1,0 +1,377 @@
+* {
+  box-sizing: border-box;
+
+}
+
+:root {
+
+  --Soft-Cyan: hsl(174, 77%, 80%);
+  --Strong-Cyan: hsl(174, 86%, 45%);
+  --Light-Grayish-Red: hsl(14, 92%, 95%);
+  --Light-Red: hsl(15, 100%, 70%);
+  --Pale-Blue: hsl(226, 100%, 87%);
+  --White: hsl(0, 0%, 100%);
+  --Very-Pale-Blue: hsl(230, 100%, 99%);
+  --Light-Grayish-Blue: hsl(224, 65%, 95%);
+  --Light-Grayish-Blue2: hsl(223, 50%, 87%);
+  --Grayish-Blue: hsl(225, 20%, 60%);
+  --Dark-Desaturated-Blue: hsl(227, 35%, 25%);
+}
+
+body {
+  background-color: var(--Very-Pale-Blue);
+  font-family: 'Manrope', sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+main {
+  background-image: url(images/bg-pattern.svg);
+  background-repeat: no-repeat;
+  padding-top: 30px;
+}
+
+
+
+h1 {
+  color: var(--Dark-Desaturated-Blue);
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+h2 {
+  color: var(--Grayish-Blue);
+  font-weight: 800;
+  font-size: 0.9375rem;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+h3 {
+  color: var(--Dark-Desaturated-Blue);
+  font-weight: 800;
+  font-size: 2rem;
+  margin: 25px 0;
+}
+
+h4 {
+  color: var(--Grayish-Blue);
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+
+h5 {
+  font-weight: 800;
+  font-size: .7rem;
+  color: var(--Light-Red);
+  margin: 0;
+}
+
+p {
+  color: var(--Grayish-Blue);
+  font-weight: 600;
+  font-weight: 0.9375rem;
+  line-height: 1.5rem;
+}
+
+header {
+  background-image: url(images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 50px 0;
+}
+
+header p {
+  padding: 0 19%;
+}
+
+.pricingBox {
+  border-radius: 10px;
+  background-color: var(--White);
+  width: 85%;
+  margin: 0 auto;
+  padding: 30px 0;
+  margin-bottom: 40px;
+  box-shadow: 0 16px 16px -2px var(--Light-Grayish-Blue2);
+}
+
+.mainamount {
+  display: flex;
+  justify-content: center;
+}
+
+.mainamount P {
+  display: flex;
+  align-self: center;
+  margin-left: 10px;
+  letter-spacing: .1rem;
+
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.billing {
+  font-size: .8rem;
+}
+
+.discount {
+  background-color: hsla(15, 100%, 70%, 0.223);
+  border-radius: 30px;
+  width: 12.1%;
+  margin-left: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 2px 6px;
+}
+
+/* range-slider */
+
+.slideConatiner {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 85%;
+  height: 8px;
+  border-radius: 5px;
+  background-color: var(--Light-Grayish-Blue2);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-moz-range-progress {
+  border-radius: 5px;
+  height: 8px;
+  background-color: var(--Soft-Cyan);
+}
+
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50px;
+  background-image: url(images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
+  background-color: var(--Strong-Cyan);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50px;
+  background-image: url(images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
+  background-color: var(--Strong-Cyan);
+  cursor: pointer;
+}
+
+
+/* toogle switch  */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  margin: 0 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.ToggleRound {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: .4s;
+  -webkit-transition: .4s;
+  background-color: var(--Light-Grayish-Blue2);
+  border-radius: 50px;
+}
+
+.ToggleRound:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--White);
+  -webkit-transition: .4s;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+input:checked+.ToggleRound {
+  background-color: var(--Strong-Cyan);
+}
+
+input:checked+.ToggleRound:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+hr {
+  border: .05px solid var(--Light-Grayish-Blue2);
+}
+
+.benefits {
+  padding: 30px 0;
+}
+
+.benefitBoxs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.benefitBoxs p {
+  font-size: 0.9375rem;
+  margin: 0;
+}
+
+.check {
+  display: flex;
+  align-self: center;
+  height: 10px;
+  margin-right: 20px;
+}
+
+button {
+  background-color: var(--Dark-Desaturated-Blue);
+  color: var(--Pale-Blue);
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  padding: 12px 0;
+  width: 50%;
+  border: none;
+  border-radius: 50px;
+  margin-top: 25px;
+}
+
+@media screen and (min-width:62.5rem) {
+
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    display: flex;
+    align-self: center;
+    margin: 0;
+    letter-spacing: .15rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  .pricingBox {
+    width: 50%;
+  }
+
+  .price {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 85%;
+
+    margin: 0 auto;
+  }
+
+  .mainamount {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .slideConatiner {
+    grid-row-start: 2;
+    grid-column: span 2;
+
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  .time {
+    display: flex;
+    justify-content: flex-end;
+    margin: 40px 85px 40px 0;
+  }
+
+  .discount {
+    width: 15%;
+  }
+
+  .billing {
+    font-size: 0.9375rem;
+  }
+
+
+  .benefits {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .benefitBoxs {
+    justify-content: initial;
+  }
+
+  .benfitList {
+    width: 40%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  button {
+    width: 50%;
+    margin: 0;
+    padding: 15px 0;
+  }
+
+  .buttonBox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+  }
+
+
+}
