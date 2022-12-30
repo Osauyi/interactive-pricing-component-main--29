@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]
-- Live Site URL: [Add live site URL here]
+- Solution URL: [https://github.com/Osauyi/interactive-pricing-component-main--29.git]
+- Live Site URL: [https://osauyi.github.io/interactive-pricing-component-main--29/]
 
 ## My process
 
