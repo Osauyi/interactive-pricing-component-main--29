@@ -189,6 +189,15 @@ header p {
   cursor: pointer;
 }
 
+.slider::-moz-range-thumb:hover {
+  background-color: hsl(174, 92%, 41%);
+  box-shadow: 0 18px 16px -2px var(--Soft-Cyan);
+}
+
+.slider::-webkit-slider-thumb:hover {
+  background-color: hsl(174, 92%, 41%);
+  box-shadow: 0 18px 16px -2px var(--Soft-Cyan);
+}
 
 /* toogle switch  */
 
@@ -237,6 +246,10 @@ input:checked+.ToggleRound {
   background-color: var(--Strong-Cyan);
 }
 
+input:hover+.ToggleRound {
+  background-color: var(--Soft-Cyan);
+}
+
 input:checked+.ToggleRound:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
@@ -279,6 +292,10 @@ button {
   border: none;
   border-radius: 50px;
   margin-top: 25px;
+}
+
+button:hover {
+  color: var(--Light-Grayish-Blue);
 }
 
 @media screen and (min-width:62.5rem) {
