@@ -317,7 +317,7 @@ button:hover {
   }
 
   .pricingBox {
-    width: 50%;
+    width: 40%;
   }
 
   .price {
@@ -387,7 +387,7 @@ button:hover {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 80%;
+    width: 60%;
   }
 
 
